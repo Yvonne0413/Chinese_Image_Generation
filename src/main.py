@@ -4,3 +4,7 @@
 # @Author : Zhuoyi Huang
 # @File : main.py
 
+from model.stn_solver import StnSolver
+
+if __name__ == '__main__':
+    solver = StnSolver()

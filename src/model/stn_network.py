@@ -96,5 +96,7 @@ class StnNetwork(nn.Module):
         output, x, y = self.stn(x, y)
         return output, x, y
 
+
 def build_model():
     model = StnNetwork()
+    return model
