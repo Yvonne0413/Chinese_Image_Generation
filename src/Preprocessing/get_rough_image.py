@@ -321,7 +321,7 @@ def main():
         updateDatabase(path_to_database, path_to_char_to_uid)
     if COMPUTE_AND_IMPORT_ARRAYS:
         # styles = sys.argv[1:]  # name of the style
-        styles = ["Regular"]
+        styles = ["Shouxie"]
         # rough_directory = os.path.dirname('../outputFiles/rough_1000/')
         # origin_directory = os.path.dirname('../outputFiles/origin_1000/')
         # if not os.path.exists(rough_directory):

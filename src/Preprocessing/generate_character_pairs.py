@@ -177,7 +177,7 @@ class GeneratePairs:
             target_pair.paste(origin_image, (left, 0, right, self.unit_size))
             left += self.unit_size
             right += self.unit_size
-            save_name = "lid" + str(lid) + "_" + str(uid).zfill(5)
+            save_name = "lid" + str(lid) + "_" + "src_" + str(uid).zfill(5)
             for i in range(len(comp_imgs)):
                 box = (left, 0, right, self.unit_size)
                 target_pair.paste(comp_imgs[i], tuple(box))

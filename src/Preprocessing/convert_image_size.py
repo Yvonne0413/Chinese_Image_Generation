@@ -11,11 +11,11 @@ import argparse
 
 
 parser = argparse.ArgumentParser(description='Convert_image size')
-parser.add_argument('--in_path', dest='in_path', default="../data/interFiles/FontImages/",
+parser.add_argument('--in_path', dest='in_path', default="../../data/interFiles/FontImages/",
                     help='fonts file directory, include files end with otf or ttf.')
-parser.add_argument('--out_path', dest='out_path', default="../data/interFiles/FontImages/",
-                    help='font file name, default SourceHanSansCN-Regular.otf')
-parser.add_argument('--style_name', dest='style_name', default="Regular",
+parser.add_argument('--out_path', dest='out_path', default="../../data/interFiles/FontImages/",
+                    help='font out directory')
+parser.add_argument('--style_name', dest='style_name', default="Shouxie",
                     help='fonts style name, default regular')
 parser.add_argument('--origin_size', dest='origin_size', default=1000,
                     help='origin image size')
@@ -60,7 +60,7 @@ class ConvertImage:
 
     def convert_dir_img(self):
         self.convert_all_img(self.rough_convert_in_path, self.rough_convert_out_path)
-        # self.convert_all_img(self.origin_convert_in_path, self.origin_convert_out_path)
+        self.convert_all_img(self.origin_convert_in_path, self.origin_convert_out_path)
 
 
 if __name__ == '__main__':

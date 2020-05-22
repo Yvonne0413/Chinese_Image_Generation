@@ -15,13 +15,13 @@ os.environ['KMP_DUPLICATE_LIB_OK']='True'  # for Mac OS users
 
 # fonts file
 fonts = ["HYQiHei-25JF.otf", "HanYiXiXingKaiJian-1.ttf", "Kaiti_2.TTF", "SourceHanSansCN-Regular.otf",
-         "HYXinRenWenSongW-1.otf", "SourceHanSerifCN-Heavy-4.otf"]
+         "HYXinRenWenSongW-1.otf", "SourceHanSerifCN-Heavy-4.otf", "XingshuShouxie.ttf"]
 
 # fonts style name
-styles = ["Heiti", "Kaiti", "Kaiti", "Regular", "Songti", "Songti"]
+styles = ["Heiti", "Kaiti", "Kaiti", "Regular", "Songti", "Songti", "Shouxie"]
 
 # additional style name
-adds = ["_2", "_1", "_2", "", "_1", "_2"]
+adds = ["_2", "_1", "_2", "", "_1", "_2", ""]
 
 # fonts offset
 offsets = [-70, 0, -20, 0, -60, -260]
@@ -33,13 +33,13 @@ sizes = 1000
 parser = argparse.ArgumentParser(description='Generate character images')
 parser.add_argument('--fonts_dir', dest='fonts_dir', default="../../data/inputFiles/FontsFiles/",
                     help='fonts file directory, include files end with otf or ttf.')
-parser.add_argument('--font_filename', dest='font_filename', default="HYQiHei-25JF.otf",
+parser.add_argument('--font_filename', dest='font_filename', default="XingshuShouxie.ttf",  # modified
                     help='font file name, default SourceHanSansCN-Regular.otf')
-parser.add_argument('--style_name', dest='style_name', default="Heiti",
+parser.add_argument('--style_name', dest='style_name', default="Shouxie",   # modified
                     help='fonts style name, default regular')
-parser.add_argument('--add_name', dest='add_name', default="_2",
+parser.add_argument('--add_name', dest='add_name', default="",  # modified
                     help='fonts add name, default ')
-parser.add_argument('--y_offset', dest='y_offset', default=-70,
+parser.add_argument('--y_offset', dest='y_offset', default=0,    # modified,
                     help='fonts offsets, default 0')
 parser.add_argument('--size', dest='size', default=1000,
                     help='generate image size default 1000')
